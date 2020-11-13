@@ -257,7 +257,7 @@ app.get('/v1/:userid', async (req, res) => {
         const forTinfoil = {
             files: response.data.files,
             directories: response.data.directories,
-            success: response.data.success},
+            success: response.data.success,
             googleApiKey: process.env.GOOGLE_API_PUBLIC
         }
         res.json(forTinfoil);
